@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOVER / TRANSFORM AND TRANSITION</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin-top: 1rem;
+            background: linear-gradient(to left, green, blue);
+            transition-property: all;
+            transition-duration: 400ms;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out;
+            transition: all 400ms ease-in-out 0s;
+        }
+        .box:hover{
+            transform: translate(40%, 0 rotate(40deg));
+            background: linear-gradient(180 deg, green, blue);
+        }
+        .box1:hover{
+            transform: rotate(40deg);
+        }
+        .box2:hover{
+            transform: skew(40deg);
+        }
+        .box3:hover{
+            transform: scale(1.10);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

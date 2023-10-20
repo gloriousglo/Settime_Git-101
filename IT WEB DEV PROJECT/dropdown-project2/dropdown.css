@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dropdownmenu{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: sticky;
+}
+nav .logotext{
+    color: white;
+    font-size: 30px;
+}
+.logotext span{
+    color: rgb(42, 42, 250);
+}
+ul{
+   display: flex;
+   list-style: none;
+   
+}
+
+.dropdownmenu ul li {
+    padding: 10px 30px;
+   position: relative;
+}
+.dropdownmenu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.dropdownmenu li a:hover{
+    color: rgb(42, 42, 250);
+}
+.submenu{
+    display: none;
+}
+.dropdownmenu ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(22, 21, 21);
+}
+.submenu ul{
+    display: block;
+    margin: 10px;
+}
+.submenu ul li{
+    width: 150px;
+    padding: 10px;
+}
+.fas{
+    margin-left: 10px;
+    float: right;
+    padding-top: 3px;
+}
+.submenu-1{
+    display: none;
+}
+
+.submenu ul li:hover .submenu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: rgb(22, 21, 21);
+}
+.hero{
+    height: calc(100vh - 13vh);
+    background-image: url(/pexels-artem-podrez-4492189.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen {
+    
+}

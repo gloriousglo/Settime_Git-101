@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH-BAR</title>
+    <link rel="stylesheet" href="search.css" class="rel">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" class="search" placeholder="Search">
+                    <img src="CLOSE.svg" class="close-image">
+                    <button type="submit" class="button-box">
+                        <img src="2931184_normal_regular_zoom_glass_magnifier_icon.png" class="search-image">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    let search= document.querySelector('.search');
+    let close_image = document.querySelector('.close-image');
+    
+    function checkinputfield() {
+        if(search.value === ""){
+            close_image.style.display = "none";
+        }
+        else{
+            close_image.style.display = "block";
+        }
+    }
+        search.oninput = function(){
+            checkinputfield();
+        }
+        close_image.onclick = function(){
+            search.value = "";
+            close_image.style.display= 'none'
+        }
+        checkinputfield();
+</script>
+</html>

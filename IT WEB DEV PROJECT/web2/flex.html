@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FLEX</title>
+    <link rel="stylesheet" href="flex.css">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box ;
+        }
+        section{
+            background-color: lightpink;
+            width: 100%;
+            padding:4rem 1rem;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .items{
+            width: 30%;
+            height: 30vh;
+            background-color: #fff;  
+            border-radius: 8px;
+            box-shadow: 0 0 8px -3px rgb(32, 31, 31);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        h2, p{
+            text-align: center;
+        }
+        p:nth-of-type(1){
+            margin-block: 10px;
+        }
+        i{
+            font-size: 4rem;
+            color: rgb(172, 145, 145);
+            border: 2px solid;
+            border-radius: 4px;
+        }     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FASHION<span>.</span></h1>
+        <div class="lineham">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="flex.html">ABOUT</a></li>
+            <li><a href="icon.html">SHOP</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+    <section>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, vel?</p>
+        <div class="container">
+            <div class="items">
+                <i class="uil uil-play-circle"></i>
+                <h5>Affordability</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, commodi.</p>
+            </div>
+            <div class="items">
+                <i class="uil uil-play-circle"></i>
+                <h5>Affordability</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, commodi.</p>
+            </div>
+            <div class="items">
+                <i class="uil uil-play-circle"></i>
+                <h5>Affordability</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, commodi.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

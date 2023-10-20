@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        .box{
+            width: 50%;
+            height: 80vh;
+            margin: auto;
+            background-color: rgb(253, 60, 60);
+            overflow: hidden;
+           /* animation-name: anime1;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;*/
+            animation: anime1 1s linear 0s infinite alternate;
+        }
+        .head1{
+            text-align: center;
+            background-color: rgb(34, 34, 253);
+            font-size: 3rem;
+            transform: translate(0, 16rem);
+            animation: head1 20s ease-in-out 0s infinite;
+        }
+        .head2{
+            transform: translate(0, 34rem);
+            text-align: center;
+            font-size: 3rem;
+            animation: head2 20s ease-in-out 0s infinite;
+        }
+        @keyframes head1 {
+            0%, 20%{
+                transform: translate(0, 16rem); 
+            }
+            35%, 60%{
+                transform: translate(0, 40rem);
+            }
+        }
+        @keyframes head2 {
+            0%,40%{
+                transform: translate(0, 34rem);
+            }
+            50%{
+                transform: translate(0, 10rem);
+            }
+        }
+        @keyframes anime1 {
+            /*from{
+                background-color: rgb(253, 60, 60);
+                transform: rotate(0 deg) translate(0);
+            }
+            to{
+                background-color: green;
+                transform: rotate(360deg) translate(10rem);
+            }*/
+
+            0%{
+                background-color: rgb(253, 60, 60);
+                transform: translate(0);
+            }
+            40%{
+                background-color: yellow;
+            }
+            70%{
+                background-color: plum;
+            }
+            100%{
+                background-color: blue;
+                transform: translate();
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="head1">This is Awesome</h1>
+        <h1 class="head2">This is Cool</h1>
+    </div>
+</body>
+</html>
